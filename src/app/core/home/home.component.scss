@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  mat-sidenav-container{
+    margin: 0px 0px 0px 10px;
+    width: 300px;
+    max-height: 90vh;
+    overflow: auto;
+    mat-sidenav-content{
+      ul{
+        list-style: none;
+        max-width: 250px;
+        li{
+          margin: 20px 0px;
+          background-color: rgb(252, 67, 67);
+          color: #ffffff;
+          padding: 20px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .directives{
+    margin: 50px 50px;
+  }
+}

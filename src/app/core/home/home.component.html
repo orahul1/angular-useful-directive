@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-sidenav-container class="sidemenu">
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content>
+      <ul>
+        <li *ngFor="let directive of directiveList" (click)="selectedDirective(directive.type, directive.name)">{{directive.name}}</li>
+      </ul>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <div class="directives">
+    <app-directive-list></app-directive-list>
+  </div>
+
+</div>
