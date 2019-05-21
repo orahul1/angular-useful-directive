@@ -6,17 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directive-list.component.scss']
 })
 export class DirectiveListComponent implements OnInit {
-  userSelectedDirective: string = 'hideandshowPassword';
+  userSelectedDirective: string = 'hideAndShowPassword';
   userSelectedDirectiveName: string = 'Password show/hide';
-  password:string = 'Password123';
+  password: string = 'Password123';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  selectedDirective(type, name){
-    this.userSelectedDirective = type;
+  selectedDirective(id, name){
+    this.userSelectedDirective = id;
     this.userSelectedDirectiveName = name;
   }
 

@@ -1,14 +1,13 @@
 <div class="container">
   <mat-sidenav-container class="sidemenu">
-    <mat-sidenav>Start</mat-sidenav>
     <mat-sidenav-content>
       <ul>
-        <li *ngFor="let directive of directiveList" (click)="selectedDirective(directive.type, directive.name)">{{directive.name}}</li>
+        <li [ngClass]="{'directive' : item.type == 'directive', 'pipe': item.type == 'pipe' }" *ngFor="let item of directiveList" (click)="selectedDirective(item.id, item.name)">{{item.name}}</li>
       </ul>
     </mat-sidenav-content>
   </mat-sidenav-container>
 
-  <div class="directives">
+  <div class="directives_pipe">
     <app-directive-list></app-directive-list>
   </div>
 

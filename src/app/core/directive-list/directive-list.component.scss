@@ -10,6 +10,20 @@
     }
     .pass{
       padding: 10px 0px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .search-container{
+    label{
+      font-size: 25px;
+      color: rebeccapurple;
+    }
+    .search{
+      padding: 10px 0px;
+      display: flex;
+      align-items: center;
     }
   }
 }

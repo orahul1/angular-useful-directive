@@ -12,10 +12,28 @@ export class HomeComponent implements OnInit {
   private directiveComponent: DirectiveListComponent;
   directiveList = [{
     "name": 'Password show/hide',
-    "type": 'hideandshowPassword'
+    "id": 'hideAndShowPassword',
+    "type": 'directive'
   },{
     "name": 'Debounce',
-    "type": 'debounce'
+    "id": 'debounce',
+    "type": 'directive'
+  },{
+    "name": 'Search (from a list)',
+    "id": 'searchLocal',
+    "type": 'directive'
+  },{
+    "name": 'Date (Built-in)',
+    "id": 'date',
+    "type": 'pipe'
+  },{
+    "name": 'Number (Built-in)',
+    "id": 'number',
+    "type": 'pipe'
+  },{
+    "name": 'String (Built-in)',
+    "id": 'string',
+    "type": 'pipe'
   }]
 
   constructor(private ds: DirectiveService) { }
@@ -23,8 +41,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectedDirective(type,name){
-    this.directiveComponent.selectedDirective(type, name);
+  selectedDirective(id,name){
+    this.directiveComponent.selectedDirective(id, name);
   }
 
 }
